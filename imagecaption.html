@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Caption Generator</title>
+  {{data}}
+<style type="text/css">
+ body{
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlcXsYMdkJ9k_573Hv92zNkd3C4MA3E4ij8VSsPmgsOS9XuC1EvPgGvk2_U6TI-m-W7w0&usqp=CAU');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+ }
+</style>
+<style>
+	.container { 
+  height: 200px;
+  position: relative;
+  border: 3px black; 
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button{
+	font-size: 16px;
+	padding: 32px 32px;
+	border-radius: 50%;
+}
+</style>
+</head>
+<body>
+  <h1 style="text-align:center;">IMAGES</h1>
+<figure style="text-align:center;">
+<img src="https://www.captiongenerator.com/images/Logo@2x.png" height="100px">
+<figcaption><i>Describe the image with spell capability</i></figcaption>
+</figure>
+<article>
+  <section>
+  <header>
+  <div class="container">
+  <div class="center">
+  	<p ><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none"></p>
+    <div class="button">
+    <button><label for="file" style="cursor: pointer;">Upload Image</label></button>
+    </div>
+    <p><img id="output" width="200" /></p>
+</div>
+</div>
+<script>
+var loadFile = function(event) {
+  var image = document.getElementById('output');
+  image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+<br>
+<br>
+<p>Upload the image in the field and the description of the image will be generate</p>
+<p>The generated description will be spelled out aloud</p><hr>
+</header>
+</section>
+</article>
+  <main>
+  <section>
+<details>
+  <summary>This <mark>Website</mark> can be useful for people with:</summary>
+  <p><b>Visually impaired</b></p>
+  <p><b>Deaf and dumb</b></p>
+  <p><b>Colour blindness</b></p>
+</details><hr>
+</section>
+<form>
+  Login:<br>
+  <input type="text" name="Login"><br>
+  Password:<br>
+  <input type="text" name="Password">
+</form>
+<button>Login</button>
+<button>New User</button>
+</main>
+<footer>
+  <p style="font-size:12px"><b>Contact:</b>rs6209@srmist.edu.in.</p>
+</footer>
+</body>
+</html>
